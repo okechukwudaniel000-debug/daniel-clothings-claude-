@@ -1,0 +1,66 @@
+{
+  "[project]/components/StorySection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/StorySection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_StorySection_tsx_1xwnzj0._.js",
+      "static/chunks/components_StorySection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/CollectionsSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/CollectionsSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_1gvw5gu._.js",
+      "static/chunks/components_CollectionsSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/FeaturesSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/FeaturesSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_0sn3hd7._.js",
+      "static/chunks/components_FeaturesSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/TrustIndicators.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/TrustIndicators.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_0m2ggd_._.js",
+      "static/chunks/components_TrustIndicators_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/ReviewsSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/ReviewsSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/_012a0k-._.js",
+      "static/chunks/components_ReviewsSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/ShowcaseSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/ShowcaseSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_ShowcaseSection_tsx_0wopt7y._.js",
+      "static/chunks/components_ShowcaseSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/AboutSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/AboutSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_AboutSection_tsx_21a_4x7._.js",
+      "static/chunks/components_AboutSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/ContactSection.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/ContactSection.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/node_modules_react-hook-form_dist_index_esm_mjs_0b0kr13._.js",
+      "static/chunks/components_0x1soyn._.js",
+      "static/chunks/components_ContactSection_tsx_0lpz786._.js"
+    ]
+  },
+  "[project]/components/Footer.tsx [app-client] (ecmascript, next/dynamic entry)": {
+    "id": "[project]/components/Footer.tsx [app-client] (ecmascript, next/dynamic entry)",
+    "files": [
+      "static/chunks/components_Footer_tsx_0_1owdl._.js",
+      "static/chunks/components_Footer_tsx_0lpz786._.js"
+    ]
+  }
+}

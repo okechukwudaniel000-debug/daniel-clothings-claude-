@@ -1,0 +1,119 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #FFFFFF;
+  --primary: #0D0D0D;
+  --primary-rgb: 13, 13, 13;
+  --secondary: #333333;
+  --accent: #D4AF37;
+  --gold: #D4AF37;
+  --gold-rgb: 212, 175, 55;
+  --gold-light: #F5D67B;
+}
+
+[data-theme='dark'] {
+  --background: #0D0D0D;
+  --primary: #FFFFFF;
+  --primary-rgb: 255, 255, 255;
+  --secondary: #BDBDBD;
+}
+
+* {
+  scrollbar-width: thin;
+  scrollbar-color: #D4AF37 transparent;
+}
+
+*::-webkit-scrollbar {
+  width: 8px;
+}
+*::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #D4AF37, #F5D67B);
+  border-radius: 999px;
+}
+*::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: var(--background);
+  color: var(--primary);
+}
+
+::selection {
+  background-color: #D4AF37;
+  color: #080808;
+}
+
+:focus-visible {
+  outline: 2px solid #D4AF37;
+  outline-offset: 3px;
+  border-radius: 2px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.001ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.001ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+@layer components {
+  .glass {
+    @apply backdrop-blur-xl bg-[rgb(var(--primary-rgb)/0.05)] border;
+    border-color: rgba(var(--gold-rgb), 0.3);
+  }
+
+  .gold-text {
+    @apply bg-gradient-to-r from-gold-light via-gold to-gold-light bg-clip-text text-transparent;
+  }
+
+  .shimmer {
+    background: linear-gradient(
+      90deg,
+      rgba(212, 175, 55, 0.04) 0%,
+      rgba(212, 175, 55, 0.16) 20%,
+      rgba(212, 175, 55, 0.04) 40%,
+      rgba(212, 175, 55, 0.04) 100%
+    );
+    background-size: 1400px 100%;
+    @apply animate-shimmer;
+  }
+
+  .shine-card {
+    position: relative;
+    overflow: hidden;
+  }
+  .shine-card::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -150%;
+    width: 60%;
+    height: 100%;
+    background: linear-gradient(
+      115deg,
+      transparent 0%,
+      rgba(245, 214, 123, 0.18) 50%,
+      transparent 100%
+    );
+    transform: skewX(-20deg);
+    transition: left 0.9s ease;
+  }
+  .shine-card:hover::after {
+    left: 150%;
+  }
+
+  .section-eyebrow {
+    @apply font-display text-[11px] tracking-widest text-gold uppercase;
+  }
+}
