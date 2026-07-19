@@ -15,11 +15,6 @@ export function useTheme() {
     if (typeof window === "undefined") return "dark";
     return (window.localStorage.getItem(STORAGE_KEY) as Theme) || "dark";
   });
-  const [mounted, setMounted] = useState(false);
-
-  useEffect(() => {
-    setMounted(true);
-  }, []);
 
   useEffect(() => {
     document.documentElement.setAttribute("data-theme", theme);
@@ -34,5 +29,5 @@ export function useTheme() {
     setThemeState((prev) => (prev === "dark" ? "light" : "dark"));
   }, []);
 
-  return { theme, setTheme, toggleTheme, mounted };
+  return { theme, setTheme, toggleTheme };
 }
