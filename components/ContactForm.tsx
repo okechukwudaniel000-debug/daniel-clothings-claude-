@@ -14,7 +14,7 @@ export default function ContactForm() {
   const {
     register,
     handleSubmit,
-    formState: { errors, isSubmitting, isSubmitSuccessful },
+    formState: { errors, isSubmitting },
     reset,
   } = useForm<Inputs>();
   const [submissionMessage, setSubmissionMessage] = useState<string | null>(

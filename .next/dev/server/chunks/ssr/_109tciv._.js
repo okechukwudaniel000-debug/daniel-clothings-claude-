@@ -32,7 +32,7 @@ const metadata = {
         description: "Premium Nigerian fashion brand offering Ankara, Agbada, Senator, corporate suits and luxury women's wear. Crafted for confidence.",
         images: [
             {
-                url: "/Daniel Clothings logo (without name).png",
+                url: "/Daniel Clothings logo without name(removebg).png",
                 width: 1200,
                 height: 630,
                 alt: "Daniel Clothings — Premium Nigerian Fashion"
@@ -44,7 +44,7 @@ const metadata = {
         title: "Daniel Clothings — Where Tradition Meets Modern Elegance",
         description: "Premium Nigerian fashion brand. Ankara, Agbada, Senator, Corporate & Luxury Women's wear. Crafted for confidence.",
         images: [
-            "/Daniel Clothings logo (without name).png"
+            "/Daniel Clothings logo without name(removebg).png"
         ],
         creator: "@danielclothings_"
     },

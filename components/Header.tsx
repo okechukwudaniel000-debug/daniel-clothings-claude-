@@ -35,7 +35,7 @@ export default function Header() {
       <div className="container mx-auto px-6 py-4 flex justify-between items-center">
         <div className="font-display text-2xl font-bold text-gold">
           <Image
-            src="/Daniel Clothings logo (without name).png"
+            src="/Daniel Clothings logo without name(removebg).png"
             alt="Daniel Clothings Logo"
             width={40}
             height={40}

@@ -1,4 +1,3 @@
-import { motion } from "framer-motion";
 import { socialLinks, navItems } from "@/lib/data";
 import Image from "next/image";
 
@@ -16,7 +15,7 @@ export default function Footer() {
         {/* Column 1: Brand */}
         <div className="flex flex-col items-center md:items-start">
           <Image
-            src="/Daniel Clothings logo (without name).png"
+            src="/Daniel Clothings logo without name(removebg).png"
             alt="Daniel Clothings Logo"
             width={50}
             height={50}

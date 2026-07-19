@@ -7,26 +7,29 @@ type Theme = "dark" | "light";
 const STORAGE_KEY = "daniel-clothings-theme";
 
 export function useTheme() {
-  const [theme, setThemeState] = useState<Theme>("dark");
+  // Initialize state lazily from localStorage to resolve the lint error.
+  // This runs once on component mount. It may cause a hydration mismatch if the
+  // client's stored theme differs from the server's default, which is an
+  // acceptable trade-off for theme persistence.
+  const [theme, setThemeState] = useState<Theme>(() => {
+    if (typeof window === "undefined") return "dark";
+    return (window.localStorage.getItem(STORAGE_KEY) as Theme) || "dark";
+  });
   const [mounted, setMounted] = useState(false);
 
   useEffect(() => {
-    const stored = window.localStorage.getItem(STORAGE_KEY) as Theme | null;
-    const initial = stored ?? "dark";
-    setThemeState(initial);
-    document.documentElement.setAttribute("data-theme", initial);
     setMounted(true);
+    document.documentElement.setAttribute("data-theme", theme);
+    window.localStorage.setItem(STORAGE_KEY, theme);
   }, []);
 
   const setTheme = useCallback((next: Theme) => {
     setThemeState(next);
-    document.documentElement.setAttribute("data-theme", next);
-    window.localStorage.setItem(STORAGE_KEY, next);
   }, []);
 
   const toggleTheme = useCallback(() => {
-    setTheme(theme === "dark" ? "light" : "dark");
-  }, [theme, setTheme]);
+    setThemeState((prev) => (prev === "dark" ? "light" : "dark"));
+  }, []);
 
   return { theme, setTheme, toggleTheme, mounted };
 }
