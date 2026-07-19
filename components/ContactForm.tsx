@@ -27,6 +27,7 @@ export default function ContactForm() {
       message
     )}%0A%0AFrom:%20${name}%0AEmail:%20${email}`;
 
+    // eslint-disable-next-line react-hooks/immutability
     window.location.href = mailtoLink;
 
     // Simulate a delay to allow the mail client to open
